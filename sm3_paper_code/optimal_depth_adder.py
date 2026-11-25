@@ -9,7 +9,7 @@ import random
 
 
 from projectq.ops import CNOT, H, Measure, S, Sdag, T, Tdag, Toffoli, X
-# Toffoli 实现模式，与原资源统计代码保持一致：
+
 #   TD = 0：直接使用 Toffoli 门，不进行分解。
 #   TD = 1：使用无需辅助位的 Clifford+T 分解。
 #   TD = 2：使用 quantum_and / quantum_and_dag 分解。
