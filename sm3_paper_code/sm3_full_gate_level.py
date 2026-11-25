@@ -4,8 +4,6 @@
 各含 68 个 CNOT 门的 P0/P1 网络，以及论文中的单比特 QFA/FF/GG 线路。
 两条状态线路交替运行：先构造下一轮 COMP，再清理上一轮 COMP。
 
-Python 门序本身不能证明论文所用的并行 T 深度。ResourceCounter 只执行
-一种具体测量结果的分支，因此条件修正门数需要另外按固定预算补计。
 """
 
 from __future__ import annotations
